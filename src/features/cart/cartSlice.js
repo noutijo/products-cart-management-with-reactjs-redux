@@ -7,7 +7,7 @@ const initialState = {
     cartItems: [],
     amount: 0,
     total: 0,
-    isLoading: true
+    isLoading: false
 };
 
 export const getCartItems = createAsyncThunk("cart/getCartItems", async (payload, { rejectWithValue, getState, dispatch }) => {
@@ -48,7 +48,7 @@ const cartSlice = createSlice({
                 amount += item.amount;
                 total += item.amount * item.price;
             });
-
+ 
             state.amount = amount;
             state.total = total;
         }
