@@ -1,6 +1,6 @@
 
 #### Custom products cart management with ReactJs and redux.
 
-#### Preview
+#### Preview :
 
 ![](/src/imgs/nooutidev-cart.png)
